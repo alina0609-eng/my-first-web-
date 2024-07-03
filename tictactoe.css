@@ -1,0 +1,16 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
+.box {
+    width: 200px;  /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    background-color: #f0f0f0;  /* Change background color */
+    border: 2px solid black;  /* Black border */
+    margin: 0 auto;  /* Center the box horizontally */
+    padding: 10px;  /* Add space between content and border */
+  }
+  
+  
