@@ -10,6 +10,6 @@ body {
   height: 200px; /* Adjust height as needed */
   background-color: #5c2f2f; /* Change background color */
   border: 2px solid black; /* Black border */
-  margin: 0 auto; /* Center the box horizontally */
+  margin: 1 auto; /* Center the box horizontally */
   padding: 10px; /* Add space between content and border */
 }
