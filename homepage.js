@@ -1,6 +1,37 @@
 const button = document.getElementById("myButton"); // Assuming your button has id "myButton"
-const message = document.getElementById("message"); // Assuming your message paragraph has id "message"
 
-button.addEventListener("click", function() {
-  message.textContent = "This works!";
+hasmouseclicked = false;
+
+button.addEventListener("click", function () {
+  button.innerHTML = "Can't touch this!";
+  hasmouseclicked = true;
 });
+
+myaudio = document.getElementById("audio1-mp3");
+
+audioplayed = 0;
+
+button.addEventListener("mouseover", function () {
+  if (hasmouseclicked) {
+
+    myaudio.play();
+    button.style.position = "absolute";
+    button.style.zIndex = 1;
+    
+    const screenWidth = window.innerWidth;
+    const screenHeight = window.innerHeight;
+    const buttonWidth = button.offsetWidth;
+    const buttonHeight = button.offsetHeight;
+  
+    const randomX = Math.random() * (screenWidth - buttonWidth);
+    const randomY = Math.random() * (screenHeight - buttonHeight);
+  
+    button.style.left = randomX + "px";
+    button.style.top = randomY + "px";
+    setTimeout(pauseAudio, 4000);
+  }
+});
+
+function pauseAudio(){
+  myaudio.pause();
+}

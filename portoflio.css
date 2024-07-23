@@ -1,0 +1,88 @@
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.profilepicture {
+  width: 100px;  /* Adjust width as needed */
+    height: 100px;  /* Adjust height as needed */
+    border-radius: 50%;  /* Set 50% radius for circle */
+    overflow: hidden;  /* Hide overflowing parts of the image */
+    float: right;
+  }
+  
+  .profilepicture img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fills the container */
+    
+    
+
+  }
+  
+  nav {
+    color: #690c0c;
+    font-family: "Exo 2", sans-serif;
+    font-size: 2em;
+    text-align: center;
+    background-color: white;
+    
+  }
+  nav {
+    display: flow;
+    font-size: medium;
+}
+  nav a {
+    text-decoration: none;
+    color: inherit;
+  }
+  nav li {
+    display: inline-block;  /* Make navigation items inline */
+    margin-right: 10rem;  /* Add space between items */
+  }
+  
+  nav a {
+    color: #690c0c; /* Darker text color */
+    text-decoration: none; /* Remove underline from link */
+    font-size: 1rem;  /* Medium font size */
+    font-family: Arial, sans-serif;  /* Fallback font */
+  }
+  
+  nav a:hover {
+    color: #690c0c;  /* Change color on hover */
+  }
+  
+  /* Add a modern font (optional) */
+  @font-face {
+    font-family: "Exo 2, sans-serif";  /* Modern sans-serif font */
+    src: url("Exo 2, sans-serif.ttf") format("ttf");
+  }
+  
+  .header nav a {
+    font-family: "Exo 2", sans-serif; 
+    text-decoration: none;
+    color: #5a0202;
+    font-weight: 800;
+     
+  }
+  .header { 
+    color: #690c0c(0 22% 18%);
+    font-family: "Exo 2", sans-serif;
+    font-size: 3em; 
+  }
+  .sticky-header {
+    position: sticky;
+    top: 0;
+    background-color: white; /* Adjust background color as needed */
+    /* Other styles for your header can go here */
+  }
+  
+  
+  
+  
+  
+ 
+  
+ 

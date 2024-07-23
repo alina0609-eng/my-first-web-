@@ -1,8 +1,10 @@
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
+  overflow: hidden;
+}
+
+.grid {
+  justify-content: center;
 }
 .box {
   display: flex;
@@ -12,4 +14,73 @@ body {
   border: 2px solid black; /* Black border */
   margin: 1 auto; /* Center the box horizontally */
   padding: 10px; /* Add space between content and border */
+}
+.row {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0px;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.header {
+  text-align: center; /* Center the text within the header */
+  position: sticky;
+  padding: 15px; /* Add some padding for spacing */
+  margin-bottom: 15px; /* Add space between header and board */
+  background-image: linear-gradient(
+    to right,
+    #ffffff,
+    #f8f8f8
+  ); /* Create a linear gradient background */
+  color: rgb(209, 56, 56); /* Set text color to white for better contrast */
+  font-family: "Exo 2", sans-serif; /* Use a futuristic font ('Exo 2' is an example) */
+  font-size: 2em; /* Increase font size for better visibility */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); /* Add a slight shadow effect */
+}
+.game-title {
+  justify-content: center;
+  text-align: center;
+  padding: 10px 20px;
+  width: 100%;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat-Regular.ttf") format("woff2"),
+    url("fonts/Montserrat-Regular.ttf") format("woff");
+}
+
+.header h1 {
+  font-size: 1.5rem; /* Adjusts heading font size */
+  margin: 0; /* Removes default margin */
+}
+
+.header nav ul {
+  list-style: none; /* Removes default list style (bullets) */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+}
+
+.header nav li {
+  display: inline-block; /* Makes list items behave like inline elements */
+  margin-right: 10rem; /* Adds margin between links */
+}
+
+.header nav a {
+  text-decoration: none; /* Removes underline from links */
+  color: #5a0202; /* Sets link text color */
+  font-weight: 800; /* Makes links bolder */
+}
+
+.header nav a:hover {
+  color: #690c0c; /* Changes link color on hover */
 }
