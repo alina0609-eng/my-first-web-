@@ -48,3 +48,16 @@ transition: color 0.3s ease; /* Smooth color change on hover */
 .navigation a:hover {
 color: #007bff; /* Blue hover color for emphasis */
 }
+@media(min-width: 1000px) and (max-height: 1080){
+  .header{
+    margin-left: 0;
+    font-size: 3rem;
+    margin-right: 0;
+  }
+}
+body{
+  height: 200vh;
+  margin-top: 0px;
+  margin-left: 0px;
+  
+}

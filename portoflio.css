@@ -27,7 +27,7 @@
     font-family: "Exo 2", sans-serif;
     font-size: 2em;
     text-align: center;
-    background-color: white;
+    
     
   }
   nav {
@@ -75,7 +75,6 @@
   .sticky-header {
     position: sticky;
     top: 0;
-    background-color: white; /* Adjust background color as needed */
     /* Other styles for your header can go here */
   }
   

@@ -7,14 +7,15 @@ button.addEventListener("click", function () {
   hasmouseclicked = true;
 });
 
-myaudio = document.getElementById("audio1-mp3");
+// Audio element for sound effect
+const audio1 = new Audio('audio/audio1-.mp3'); // Replace with your click sound path
 
 audioplayed = 0;
 
 button.addEventListener("mouseover", function () {
   if (hasmouseclicked) {
 
-    myaudio.play();
+    audio1.play();
     button.style.position = "absolute";
     button.style.zIndex = 1;
     
@@ -33,5 +34,12 @@ button.addEventListener("mouseover", function () {
 });
 
 function pauseAudio(){
-  myaudio.pause();
+  audio1-mp3.pause();
 }
+
+
+
+
+
+
+
